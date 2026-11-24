@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "taskforge-cli"
+version = "0.1.0"
+description = "Offline terminal task manager backed by SQLite"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+taskforge = "taskforge.__main__:main"
+
+[tool.setuptools]
+packages = ["taskforge"]
